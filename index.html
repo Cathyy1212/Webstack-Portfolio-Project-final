@@ -8,85 +8,45 @@
     <title>Weather Application</title>
 </head>
 <body>
-    
     <div class="container">
         <div class="current-info">
-
             <div class="current-date">
-                <div class="time" id="time">
-                    12:30 <span id="am-pm">PM</span>
-                </div>
-                <div class="date" id="date">
-                    Monday, 08 July
-                </div>
+                <!-- Time and Date -->
+                <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+                <div class="date" id="date">Monday, 08 July</div>
 
-                <div class="others" id="current-weather-items">
-                    
-                    
-                </div>
+                <!-- Current Weather Items -->
+                <div class="others" id="current-weather-items"></div>
             </div>
 
+            <!-- Location Info -->
             <div class="place-container">
-                <div class="time-zone" id="time-zone">Marrakech/MOROCCO</div>
+                <div class="time-zone" id="time-zone">Timezone</div>
+                <div class="country" id="country">Country</div>
             </div>
         </div>
-
-        
     </div>
 
+    <!-- Future Weather Forecast -->
     <div class="future-forecast">
+        <!-- Today's Weather -->
         <div class="today" id="current-temp">
             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
             <div class="other">
                 <div class="day">Monday</div>
-                <div class="temp">Night - 24.6&#176; C</div>
-                <div class="temp">Day - 36.6&#176; C</div>
+                <div class="temp">Night - 24.6&#176;C</div>
+                <div class="temp">Day - 36.6&#176;C</div>
             </div>
         </div>
 
+        <!-- Weekly Weather Forecast -->
         <div class="weather-forecast" id="weather-forecast">
-            <div class="weather-forecast-item">
-                <div class="day">Tuesday</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Wednessday</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 24.6&#176; C</div>
-                <div class="temp">Day - 36.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Thursday</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 37.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Friday</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Saturday</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-           <div class="weather-forecast-item">
-                <div class="day">Sunday</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 26.6&#176; C</div>
-                <div class="temp">Day - 36.6&#176; C</div>
-            </div>   
-
+            <!-- Placeholder for dynamically inserted forecast items -->
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <script src="Weather_code.js"></script>
 </body>
 </html>
