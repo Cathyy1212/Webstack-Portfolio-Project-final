@@ -1,4 +1,4 @@
-// Getting all the data element
+// Getting all the data elements
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
 const currentWeatherItemsEl = document.getElementById('current-weather-items');
@@ -62,7 +62,7 @@ function showWeatherData(data) {
 
     // Update timezone and location
     timezone.innerHTML = location.tz_id;
-    countryEl.innerHTML = `${location.lat.toFixed(2)}N, ${location.lon.toFixed(2)}E`;
+    countryEl.innerHTML = `${location.name}, ${location.country}`;
 
     // Update current weather
     const { humidity, pressure_mb, wind_kph, condition } = current;
@@ -86,7 +86,7 @@ function showWeatherData(data) {
         </div>
     `;
 
-    // Update forecast
+    // Update current temperature and 7-day forecast
     let otherDayForecast = '';
     forecast.forecastday.forEach((day, idx) => {
         const date = new Date(day.date);
