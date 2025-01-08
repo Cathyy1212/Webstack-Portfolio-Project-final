@@ -68,6 +68,7 @@ body {
 .weather-item {
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 /* FUTURE FORECAST SECTION */
@@ -81,6 +82,8 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .today {
@@ -98,16 +101,23 @@ body {
     border-radius: 50px;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .today .temp {
     font-size: 18px;
+    margin: 5px 0;
+}
+
+.today .temp > span {
+    font-weight: bold;
 }
 
 /* WEATHER FORECAST */
 .weather-forecast {
     display: flex;
     overflow-x: auto;
+    gap: 15px;
 }
 
 .weather-forecast-item {
@@ -128,7 +138,8 @@ body {
 }
 
 .weather-forecast-item .temp {
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -148,5 +159,15 @@ body {
 
     .place-container .time-zone {
         font-size: 20px;
+    }
+
+    /* Weather forecast styling on smaller screens */
+    .weather-forecast-item {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    .today .temp {
+        font-size: 16px;
     }
 }
